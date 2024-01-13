@@ -1,6 +1,6 @@
 import java.util.Collections;
 
-public class RegistrazioneAudio extends Multimedia implements Playable{
+public class RegistrazioneAudio extends Multimedia implements Playable, HasVolume {
     private int volume;
     private int durata;
 
