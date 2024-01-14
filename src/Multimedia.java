@@ -5,6 +5,7 @@ public abstract class Multimedia {
         this.title = title;
     }
 
+    public abstract void esegui();
 
 }
 

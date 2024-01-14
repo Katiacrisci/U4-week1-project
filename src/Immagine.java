@@ -15,4 +15,8 @@ public class Immagine extends Multimedia{
         System.out.println(this.title + String.join("", Collections.nCopies(this.luminosita, "*")));
     }
 
+    @Override
+    public void esegui() {
+        this.show();
+    }
 }

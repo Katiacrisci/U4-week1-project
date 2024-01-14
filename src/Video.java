@@ -20,6 +20,7 @@ public class Video extends Multimedia implements Playable, HasVolume {
     }
 
 
+    @Override
     public void play() {
         for (int i = 0; i < this.durata; i++) {
             System.out.println(this.title + String.join("", Collections.nCopies(this.volume, "!")) + String.join("", Collections.nCopies(this.luminosita, "*")));
@@ -48,4 +49,8 @@ public class Video extends Multimedia implements Playable, HasVolume {
     }
 
 
+    @Override
+    public void esegui() {
+        this.play();
+    }
 }

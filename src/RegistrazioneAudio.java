@@ -16,6 +16,7 @@ public class RegistrazioneAudio extends Multimedia implements Playable, HasVolum
         }
     }
 
+    @Override
     public void play() {
         for (int i = 0; i < this.durata; i++) {
             System.out.println(this.title + String.join("", Collections.nCopies(this.volume, "!")));
@@ -35,4 +36,8 @@ public class RegistrazioneAudio extends Multimedia implements Playable, HasVolum
 
     }
 
+    @Override
+    public void esegui() {
+        this.play();
+    }
 }
